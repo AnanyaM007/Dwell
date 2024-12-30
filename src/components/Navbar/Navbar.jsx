@@ -1,37 +1,38 @@
 import "./Navbar.scss";
-import {useState} from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-function Navbar(){
-    const [open,setOpen]=useState(false);
+function Navbar() {
+    const [open, setOpen] = useState(false);
     return (
         <nav>
             <div className="left">
-                <a href="/" className="logo">
+                <Link to="/" className="logo">
                     <img src="/logo.png" alt="Logo" />
                     <span>Dwell</span>
-                </a>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/agents">Agents</a>
+                </Link>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/agents">Agents</Link>
             </div>
             <div className="right">
-                <a href="/login">Login</a>
-                <a href="/register" className="register">Register</a>
+                <Link to="/login">Login</Link>
+                <Link to="/register" className="register">Register</Link>
                 <div className="menuIcon">
-                    <img src="/menu.png" alt="Menu Icon" onClick={()=>setOpen(!open)} />
+                    <img src="/menu.png" alt="Menu Icon" onClick={() => setOpen(!open)} />
                 </div>
-                <div className={open?"menu active":"menu"}>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/contact">Contact</a>
-                    <a href="/agents">Agents</a>
-                    <a href="/login">Login</a>
-                    <a href="/register" className="register">Register</a>
+                <div className={open ? "menu active" : "menu"}>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/agents">Agents</Link>
+                    <Link to="/login">Login</Link>
+                    <Link to="/register" className="register">Register</Link>
                 </div>
             </div>
         </nav>
-    )
+    );
 }
 
 export default Navbar;
