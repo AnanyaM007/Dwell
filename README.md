@@ -5,15 +5,16 @@ Dwell is a modern real estate platform that simplifies the process of finding, b
 ## Features
 - **Property Search**: Browse through a wide range of properties with advanced filters.
 - **Interactive Map**: View properties on a dynamic map for location insights.
-- **Favorites**: Save properties you love for quick access.
+- **Real-Time Chat**: Communicate instantly with agents and property owners using real-time chat functionality powered by Socket.io.
 - **Contact Agents**: Directly connect with property agents for more details.
 
 ## Tech Stack
-- **Frontend**: Vite+React, SASS
+- **Frontend**: React (with Context API, React Router DOM), SASS
 - **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Authentication**: JWT-based secure login
-- **Deployment**: Vercel (Frontend),
+- **Database**: MongoDB (using Prisma ORM)
+- **Authentication**: JWT-based secure login with cookies for session management
+- **Real-Time Functionality**: Socket.io for chat and live updates
+- - **Deployment**: Vercel (Frontend)
 
 ## Installation
 1. Clone the repository:
