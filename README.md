@@ -14,7 +14,7 @@ Dwell is a modern real estate platform that simplifies the process of finding, b
 - **Database**: MongoDB (using Prisma ORM)
 - **Authentication**: JWT-based secure login with cookies for session management
 - **Real-Time Functionality**: Socket.io for chat and live updates
-- - **Deployment**: Vercel (Frontend)
+- **Deployment**: Vercel (Frontend)
 
 ## Installation
 1. Clone the repository:
